@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       nav_docs: "Dokumenty",
       nav_contact: "Kontakt",
       hero_title: "Logistyka",
-      hero_title_span: "Bez Granic",
+      hero_title_span: "Bez Granic", 
       hero_desc: "M-TRANS Mariusz Dybowski – Twój zaufany partner w transporcie międzynarodowym.",
       btn_offer: "Nasza Oferta",
       btn_quote: "Zapytaj o wycenę",
