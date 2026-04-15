@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #F4F7FB;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo img {
+    display: block;
+}
+
+.logo-sub {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1e3a8a;
+}
+
+/* NAVIGATION */
+
+.nav {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0b2a55;
+}
+
+/* linia hover */
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav .kontakt {
+    color: #dc2626;
+}
+
+.nav .kontakt:hover {
+    color: #ef4444;
+}
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    list-style: none;
+    min-width: 200px;
+    padding: 6px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    z-index: 999;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #0b2a55;
+}
+
+.dropdown-menu li a:hover {
+    background: #f3f6fb;
+}
+
+/* pokazanie dropdown */
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* LINKI NAV */
+
+.nav a,
+.lang-btn {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0b2a55;
+}
+
+/* LANGUAGE DROPDOWN */
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.lang-btn img {
+    width: 20px;
+    height: 14px;
+}
+
+.language-dropdown .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 140px;
+    z-index: 999;
+}
+
+.language-dropdown:hover .dropdown {
+    display: block;
+}
+
+.language-dropdown .dropdown li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.language-dropdown .dropdown li a img {
+    width: 20px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.language-dropdown .dropdown li a:hover {
+    background: #f0f0f0;
+}
+
+/* SEKCJA KONTAKT */
+
+.contact-section {
+    width: 100%;
+}
+
+.contact-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* NAGŁÓWEK */
+
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    color: #0B1F3A;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #555;
+}
+
+/* UKŁAD DWÓCH KOLUMN */
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+/* LEWA STRONA */
+
+.contact-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.info-box h3 {
+    color: #0B1F3A;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #444;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+/* MAILE */
+
+.info-box a {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+/* MAPA */
+
+.map-wrapper {
+    flex: 1;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: 0;
+}
+
+
+/* RESPONSYWNOŚĆ */
+
+@media(max-width:1000px) {
+
+.contact-content{
+flex-direction:column;
+}
+
+.map-wrapper iframe{
+min-height:300px;
+}
+
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" type="image/x-icon" href="img/logo-m-trans.png">
+    <script src="skrypt liczenia.js" defer></script>
+    <script src="translate.js" defer></script>
+    <title>M-TRANS Mariusz Dybowski | Transport, Spedycja, Logistyka</title>
+
+</head>
+<body>
+    <header class="header">
+        <section class="container">
+            
+            <div class="logo">
+                <img src="img/logo-m-trans.png" alt="LOGO">
+                <div class="logo-sub">Mariusz Dybowski</div>
+            </div>
+
+        <nav class="nav">
+
+            <a href="#home" data-i18n="nav_home">Start</a>
+            <a href="#o-firmie" data-i18n="nav_about">O firmie</a>
+            <a href="#oferta" data-i18n="nav_offer">Oferta</a>
+            <a href="#flota" data-i18n="nav_fleet">Flota</a>
+
+            <!-- DROPDOWN DOKUMENTY -->
+            <div class="nav-dropdown">
+                <a href="#dokumenty" data-i18n="nav_docs">Dokumenty</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="pdf/Certyfikat.pdf">Certyfikat</a></li>
+                    <li><a href="pdf/Licencja.PDF">Licencja</a></li>
+                    <li><a href="pdf/NIP.pdf">NIP</a></li>
+                    <li><a href="pdf/nr kont.pdf">nr kont</a></li>
+                    <li><a href="pdf/OCPD 2026.pdf">OCPD</a></li>
+                    <li><a href="pdf/odpis_pelny.pdf">odpis_pelny</a></li>
+                    <li><a href="pdf/POTWIERDZENIE_TRANSAKCJI_20251031082609.pdf">POTWIERDZENIE_TRANSAKCJI</a></li>
+                    <li><a href="pdf/REGON.pdf">REGON</a></li>
+                    <li><a href="pdf/zezwolenie transport krajowy.pdf">zezwolenie transport krajowy</a></li>
+                </ul>
+            </div>
+
+            <a href="kontakt.html" class="kontakt" data-i18n="nav_contact">Kontakt</a>
+
+            <!-- LANGUAGE -->
+            <div class="language-dropdown">
+                <button class="lang-btn">
+                    <img src="img/lan.webp" alt="PL"> Language
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="#" data-lang="pl"><img src="img/pl.jpg" alt="PL"> Polski</a></li>
+                    <li><a href="#" data-lang="en"><img src="img/uk.jpg" alt="EN"> English</a></li>
+                    <li><a href="#" data-lang="de"><img src="img/de.jpg" alt="DE"> Deutsch</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        </section>
+    </header>
+    <main id="home" class="hero">
+
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="movie/film.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>
+                <span data-i18n="hero_title">Logistyka</span> <br>
+                <span data-i18n="hero_title_span">Bez Granic</span>
+            </h1>
+
+            <p data-i18n="hero_desc">
+                M-TRANS Mariusz Dybowski – Twój zaufany partner 
+                w transporcie międzynarodowym
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#oferta" class="btn-primary" data-i18n="btn_offer">Nasza Oferta</a>
+                <a href="kontakt.html" class="btn-secondary" data-i18n="btn_quote">Zapytaj o wycenę</a>
+            </div>
+        </div>
+
+    </main>
+
+
+    <section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-box">
+                <div class="stat-number">
+                    <span  class="counter" data-target="16">0</span>
+                </div>
+                <p data-i18n="stat_years">Lat doświadczenia</p>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">
+                    <span  class="counter" data-target="42">0</span>
+                </div>
+                <p data-i18n="stat_vehicles">Nowoczesne pojazdy</p>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">
+                    <span  class="counter" data-target="34000">0</span>
+                </div>
+                <p data-i18n="stat_orders">Zrealizowanych zleceń</p>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-number">
+                    <span  class="counter" data-target="30">0</span> mln
+                </div>
+                <p data-i18n="stat_km">Przejechanych kilometrów</p>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+
+    <section id="o-firmie" class="about">
+    <div class="container about-wrapper">
+        <div class="about-text">
+            <h4 data-i18n="about_small">Poznaj nas</h4>
+            <h2 data-i18n="about_title">O Firmie M-TRANS</h2>
+            <p data-i18n="about_p1">
+                Od 2010 roku skutecznie zarządzamy procesami logistycznymi w transporcie
+                drogowym, obsługując szerokie grono klientów w całej Europie. Specjalizujemy się w
+                przewozach towarów zarówno w relacjach międzynarodowych, jak i krajowych.
+                Naszym priorytetem jest ciągłe podnoszenie jakości usług poprzez systematyczną
+                analizę rynku i elastyczne reagowanie na potrzeby kontrahentów.
+            </p>
+            <p data-i18n="about_p2">
+                Dzięki wieloletniemu doświadczeniu i doskonałej znajomości branży TSL budujemy
+                trwałe relacje biznesowe, oparte na terminowości i bezpieczeństwie. Obecnie
+                dysponujemy flotą 40 ciągników siodłowych, obsługującą naczepy chłodnicze (w tym
+                z podwójną podłogą) oraz naczepy typu firanka.
+            </p>
+        </div>
+        <div class="about-video">
+
+            <div class="video-box">
+                <video autoplay muted loop playsinline>
+                    <source src="movie/film.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+
+                <div class="badge">
+                    <span>100%</span>
+                    <p data-i18n="terminowosc">Terminowości</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<section id="oferta" class="oferta">
+    <div class="oferta-header">
+        <h2 data-i18n="offer_title">Nasza Oferta</h2>
+        <div class="underline"></div>
+        <div class="oferta-description" data-i18n="offer_desc">
+            Zapewniamy kompleksową obsługę transportową dostosowaną do specyfiki ładunku:
+            <br>
+            Transport całopojazdowy (FTL), transport chłodniczy, transport częściowy (LTL), transport ekspresowy. 
+            Oferujemy również profesjonalne doradztwo spedycyjne, ubezpieczenie OCP oraz zasięg na terenie Polski i całej UE.
+        </div>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card">
+            <i class="fas fa-truck"></i>
+            <h3 data-i18n="ftl_title">Transport całopojazdowy (FTL)</h3>
+            <ul>
+                <li data-i18n="ftl_li1">Naczepy standardowe (13,6 LDM) mieszczące do 33 palet euro</li>
+                <li data-i18n="ftl_li2">Transport chłodniczy w temperaturze kontrolowanej</li>
+                <li data-i18n="ftl_li3">Chłodnie standardowe (33 palety) oraz Doppelstock do 66 palet</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-boxes"></i>
+            <h3 data-i18n="ltl_title">Transport częściowy i doładunki (LTL)</h3>
+            <ul>
+                <li data-i18n="ltl_li1">Elastyczne rozwiązania dla mniejszych partii towaru – od 1 palety</li>
+                <li data-i18n="ltl_li2">Transport ekspresowy z podwójną obsadą kierowców</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-globe-europe"></i>
+            <h3 data-i18n="uslugi">Dodatkowe usługi</h3>
+            <ul>
+                <li data-i18n="extra1">Kompleksową organizację procesów logistycznych – od planowania po dostawę.</li>
+                <li data-i18n="extra2">Profesjonalne doradztwo spedycyjne w doborze optymalnych środków transportu.</li>
+                <li data-i18n="extra3">Ubezpieczenie OCP do kwoty 300 000 €.</li>
+                <li data-i18n="extra4">Zasięg obejmujący Polskę oraz całą Unię Europejską.</li>
+                <li data-i18n="extra5">transport odpadów na terenie PL i UE</li>
+                <li data-i18n="extra6">przewóz transportów wrażliwych (SENT)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- ----- Slider ---- -->
+<section class="slider">
+    <div class="slides">
+        <img src="img/biecie.webp" alt="Ciężarówka 1" width="1920px" height="800px">
+        <img src="img/ciezarowka.webp" alt="Ciężarówka 2">
+        <img src="img/cie.webp" alt="Ciężarówka 3">
+        <img src="img/tirr.webp" alt="Ciężarówka 4">
+        <img src="img/czarcie.webp" alt="Ciężarówka 5">
+    </div>
+    <div class="slider-text" data-i18n="naszaflota">Nasza flota ciężarówek</div>
+</section>
+
+<!-- ----- Sekcja kafelków ---- -->
+<section id="flota" class="flota-section">
+    <h2 data-i18n="fleet_title">Flota</h2>
+    <div class="underline"></div>
+    <p data-i18n="fleet_desc">Nasza nowoczesna i zróżnicowana flota pozwala na realizację nawet najbardziej wymagających zleceń:</p>
+
+    <div class="kafelki">
+        <div class="kafelek">
+            <img src="img/IMG_6906.webp" alt="Chłodnia">
+            <div class="caption" data-i18n="chlodnie">Chłodnia – Do przewozu towarów wymagających stałej temperatury</div>
+        </div>
+        <div class="kafelek">
+            <img src="img/tir3.webp" alt="Chłodnia Doppelstock">
+            <div class="caption" data-i18n="doppelstockiem">Chłodnia Doppelstock – Zwiększona ładowność (66 palet) przy zachowaniu pełnego bezpieczeństwa towaru</div>
+        </div>
+        <div class="kafelek">
+            <img src="img/tir1.webp" alt="Naczepy plandekowe">
+            <div class="caption" data-i18n="firanki">Naczepy plandekowe (firanki) – Uniwersalne rozwiązanie do ładunków neutralnych (13,6 LDM)</div>
+        </div>
+        <div class="kafelek">
+            <img src="img/izo.webp" alt="Izotermy">
+            <div class="caption" data-i18n="izotermy">Izotermy – Chronią towar przed wpływem warunków atmosferycznych</div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-footer">
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <h2 data-i18n="contact_title">Kontakt</h2>
+            <p class="company-name">M-TRANS Mariusz Dybowski</p>
+            <p data-i18n="contact_address1">Rogówko, ul. Lubicka 2</p>
+            <p data-i18n="contact_address2">87-162 Lubicz, Polska</p>
+            <p class="nip">NIP: 879-272-47-22</p>
+            <p class="nip">BDO 000501458</p>
+            <p class="nip">REGON 38693015100000</p>
+        </div>
+
+        <div class="contact-center">
+            <p class="label" data-i18n="contact_phone">Telefon</p>
+            <a href="tel:+48566231286" class="phone">+48 56 623 12 86</a>
+
+            <p class="label" data-i18n="contact_email">E-mail</p>
+            <a href="mailto:biuro@m-trans.net.pl" class="mail">biuro@m-trans.net.pl</a>
+        </div>
+
+        <div class="contact-right">
+            <p class="label" data-i18n="contact_hours">Godziny pracy</p>
+            <p data-i18n="contact_days">Poniedziałek – Piątek</p>
+            <p data-i18n="contact_time">08:00 – 16:00</p>
+
+            
+        </div>
+
+    </div>
+</section>
+
+<footer class="copyright" data-i18n="footer">
+    © 2026 M-TRANS MARIUSZ DYBOWSKI. WSZELKIE PRAWA ZASTRZEŻONE.
+</footer>
+
+</body>
+</html>
